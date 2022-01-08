@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import React, { useState } from 'react';
+import React from 'react';
 import { IoIosArrowDown } from 'react-icons/io';
 import {GiHamburgerMenu} from 'react-icons/gi';
 import react from 'react';
@@ -53,7 +53,7 @@ class Header extends react.Component {
         <CloseBtn>
           <AiOutlineCloseSquare style={{color: '#000', float: 'right', fontSize: '37px'}} onMouseDown={menuBackRetract}/>
         </CloseBtn>
-        <List>
+        <Lists>
           <li>Curriculum</li>
           <li onMouseDown={curriListMExpand}>Courses
           <IoIosArrowDown />
@@ -61,13 +61,13 @@ class Header extends react.Component {
           <div id='curriListM' >
             <ul>
               <span>KIDS COURSES</span>
-              <a>English for kids</a>
-              <a>French for kids</a>
-              <a>Spanish for kids</a>
-              <a>German for kids</a>
-              <a>Mandarin for kids</a>
-              <a>Japanese for kids</a>
-              <a>Korean for kids</a>
+              <a href=''>English for kids</a>
+              <a href=''>French for kids</a>
+              <a href=''>Spanish for kids</a>
+              <a href=''>German for kids</a>
+              <a href=''>Mandarin for kids</a>
+              <a href=''>Japanese for kids</a>
+              <a href=''>Korean for kids</a>
             </ul>
             <ul>
               <span>ADOLESCENTS COURSES</span>
@@ -102,7 +102,7 @@ class Header extends react.Component {
             </ul>
           </div>
           <li>Book a free trail</li>
-        </List>
+        </Lists>
      </Sidemenu>
     <Logo>
       <img src="/images/Logo-website.png" alt="Logo" />
@@ -119,44 +119,44 @@ class Header extends react.Component {
          <div id='curriList' >
             <ul>
               <span>KIDS COURSES</span>
-              <a>English for kids</a>
-              <a>French for kids</a>
-              <a>Spanish for kids</a>
-              <a>German for kids</a>
-              <a>Mandarin for kids</a>
-              <a>Japanese for kids</a>
-              <a>Korean for kids</a>
+              <a href=''>English for kids</a>
+              <a href=''>French for kids</a>
+              <a href=''>Spanish for kids</a>
+              <a href=''>German for kids</a>
+              <a href=''>Mandarin for kids</a>
+              <a href=''>Japanese for kids</a>
+              <a href=''>Korean for kids</a>
             </ul>
             <ul>
               <span>ADOLESCENTS COURSES</span>
-              <a>English for adolescents</a>
-              <a>French for adolescents</a>
-              <a>Spanish for adolescents</a>
-              <a>German for adolescents</a>
-              <a>Mandarin for adolescents</a>
-              <a>Japanese for adolescents</a>
-              <a>Korean for adolescents</a>
+              <a href=''>English for adolescents</a>
+              <a href=''>French for adolescents</a>
+              <a href=''>Spanish for adolescents</a>
+              <a href=''>German for adolescents</a>
+              <a href=''>Mandarin for adolescents</a>
+              <a href=''>Japanese for adolescents</a>
+              <a href=''>Korean for adolescents</a>
             </ul>
             <ul>
               <span>KIDS COURSES</span>
-              <a>Introductory Courses</a>
-              <a>Learn English</a>
-              <a>Learn French</a>
-              <a>Learn Spanish</a>
-              <a>Learn German</a>
-              <a>Learn Mandarin</a>
-              <a>Learn Japanese</a>
-              <a>Learn Korean</a>
+              <a href=''>Introductory Courses</a>
+              <a href=''>Learn English</a>
+              <a href=''>Learn French</a>
+              <a href=''>Learn Spanish</a>
+              <a href=''>Learn German</a>
+              <a href=''>Learn Mandarin</a>
+              <a href=''>Learn Japanese</a>
+              <a href=''>Learn Korean</a>
             </ul>
             <ul>
               <span>PRICING</span>
-              <a>English</a>
-              <a>French</a>
-              <a>Spanish</a>
-              <a>German</a>
-              <a>Mandarin</a>
-              <a>Japanese</a>
-              <a>Korean</a>
+              <a href=''>English</a>
+              <a href=''>French</a>
+              <a href=''>Spanish</a>
+              <a href=''>German</a>
+              <a href=''>Mandarin</a>
+              <a href=''>Japanese</a>
+              <a href=''>Korean</a>
             </ul>
           </div>
         </span>
@@ -182,7 +182,7 @@ class Header extends react.Component {
 
 
 const Nav = styled.nav`
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -264,12 +264,12 @@ const NavMenu = styled.div`
         background-color: #ffffff;
         box-shadow: 0px 0px 8px 0px rgb(216 216 216 / 50%);
         position: absolute;
-        padding: 0;
+        padding-inline: 150px;
         margin: 0;
         left: -356px;
         transition: all 0.2s ease 0s;
         top: 25px;
-        min-width: 100vw;
+        width: 100vw;
         min-height: 30vh;
         overflow: visible;
         visibility: hidden;
@@ -291,6 +291,7 @@ const NavMenu = styled.div`
             font-size: 11px;
             color: #777;
             padding: 0;
+            text-decoration: none;
             &:hover{
               color: #40cbbb;
             }
@@ -327,6 +328,10 @@ const Trial = styled.a`
     outline: 0;
     padding: 0;
     vertical-align: baseline;
+    color: #ffffff;
+  }
+  &:hover{
+    background-color: #13bfab;
   }
   @media (max-width: 768px) {
     display: none;
@@ -382,7 +387,7 @@ const CloseBtn = styled.div`
   min-height: 40px;
 `;
 
-const List = styled.ul`
+const Lists = styled.ul`
   padding: 0;
   li{
     position: relative;
