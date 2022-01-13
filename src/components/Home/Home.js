@@ -255,35 +255,35 @@ class Home extends react.Component {
                         </p>
                     </div>
 
-                <div className="Home-container-10-overlay">
-                    <div className='overlay-box'>
-                        <h1><CountUp start={0} end={5000} separator=","
+                    <div className="Home-container-10-overlay">
+                        <div className='overlay-box'>
+                            <h1><CountUp start={0} end={5000} separator=","
                                 suffix="+" duration={1}>
-                            {({ countUpRef, start }) => (
-                                <VisibilitySensor onChange={start}>
-                                    <span ref={countUpRef} />
-                                </VisibilitySensor>
-                            )}
-                        </CountUp></h1>
-                        <h2>Students</h2>
-                    </div>
-                    <div className='overlay-box'>
-                        <div className='stars'><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /></div>
-                        <h2>5 Star Rating</h2>
-                    </div>
-                    <div className='overlay-box'>
-                        <h1><CountUp start={0} end={200} separator=","
+                                {({ countUpRef, start }) => (
+                                    <VisibilitySensor onChange={start}>
+                                        <span ref={countUpRef} />
+                                    </VisibilitySensor>
+                                )}
+                            </CountUp></h1>
+                            <h2>Students</h2>
+                        </div>
+                        <div className='overlay-box'>
+                            <div className='stars'><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /></div>
+                            <h2>5 Star Rating</h2>
+                        </div>
+                        <div className='overlay-box'>
+                            <h1><CountUp start={0} end={200} separator=","
                                 suffix="+" duration={1}>
-                            {({ countUpRef, start }) => (
-                                <VisibilitySensor onChange={start}>
-                                    <span ref={countUpRef} />
-                                </VisibilitySensor>
-                            )}
-                        </CountUp></h1>
-                        <h2>Expert Trainers</h2>
-                    </div>
+                                {({ countUpRef, start }) => (
+                                    <VisibilitySensor onChange={start}>
+                                        <span ref={countUpRef} />
+                                    </VisibilitySensor>
+                                )}
+                            </CountUp></h1>
+                            <h2>Expert Trainers</h2>
+                        </div>
 
-                </div>
+                    </div>
                 </div>
 
                 <div className="Home-container-11">

@@ -68,9 +68,10 @@ export default () => {
     const cardData = CardData();
     return (
         <Swiper
+        navigation = {true}
             infinite
             autoplay={{
-                disableOnInteraction: true,
+                disableOnInteraction: false,
             }}
             module={[EffectFade, Parallax]}
             effect="fade"
@@ -91,15 +92,14 @@ export default () => {
                     spaceBetween: 20,
                 },
             }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
+            
             className="px-3"
         >
             <section>
                
                 {cardData.map((card, i) => {
                     return (
-                        <SwiperSlide className="testi-slides w-1/6">
+                        <SwiperSlide className="testi-slides w-full">
                             <div class="mb-10 p-10 test-item shadow-lg rounded-xl " key={i} >
                                 <div class="text-center">
                                     <img

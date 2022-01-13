@@ -5,6 +5,7 @@ import {GiHamburgerMenu} from 'react-icons/gi';
 import react from 'react';
 import {AiOutlineCloseSquare} from 'react-icons/ai';
 
+
 class Header extends react.Component {
 
   render() {
@@ -12,11 +13,13 @@ class Header extends react.Component {
     function expand () {
       document.getElementById('curriList').style.visibility='visible';
       document.getElementById('curriList').style.top='51px';
+      document.getElementById('curriList').style.height='100%'
       
     }
     function retract () {
       document.getElementById('curriList').style.visibility='hidden';
       document.getElementById('curriList').style.top='25px';
+      document.getElementById('curriList').style.height='0%'
 
     }
     function menuBackExpand () {
@@ -104,14 +107,14 @@ class Header extends react.Component {
           <li>Book a free trail</li>
         </Lists>
      </Sidemenu>
-    <Logo>
+    <Logo href='/#'>
       <img src="/images/Logo-website.png" alt="Logo" />
     </Logo>
     <NavMenu>
-      <a>
+      <a href='/curriculum'>
         <span>Curriculum</span>
       </a>
-      <a>
+      <a href='/#'>
         <span id='curriculum'  onMouseOver={expand} onMouseLeave={retract}>
           courses
           <IoIosArrowDown />
@@ -228,6 +231,7 @@ const NavMenu = styled.div`
   margin-right: auto;
   margin-left: 25px;
   a {
+    text-decoration: none;
     display: flex;
     align-items: center;
     padding: 0 12px;
@@ -240,7 +244,6 @@ const NavMenu = styled.div`
     span {
       display: flex;
       align-items: center;
-
       color: #000;
       font-size: 17px;
       font-weight: 500;

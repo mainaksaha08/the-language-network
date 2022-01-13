@@ -58,6 +58,7 @@ export default () => {
     const cardData = CardData();
     return (
         <Swiper
+        
             infinite
             autoplay={
                 {
@@ -82,10 +83,7 @@ export default () => {
                     "spaceBetween": 5
                 }
             }}
-            onSwiper={
-                (swiper) => console.log(swiper)}
-            onSlideChange={
-                () => console.log('slide change')} >
+             >
             <section> {
                 cardData.map((card, i) => {
                     return (<SwiperSlide >
