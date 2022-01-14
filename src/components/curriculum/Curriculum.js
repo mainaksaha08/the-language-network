@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom';
 
 export default function Curriculum() {
     return (
-        <div>
+        <div className='curriculum'>
             <Sec1 />
             <Sec2 />
         </div>

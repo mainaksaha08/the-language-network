@@ -93,17 +93,17 @@ class Home extends react.Component {
                     </div>
                 </div>
 
-                <div className="Home-container-2">
+                <div className="Home-container-2" style={{width: '80%'}}>
                     <h1>START YOUR JOURNEY WITH US!</h1>
                     <h2>Select a Foreign Language Course</h2>
                     <div className='Home-container-2-imgs'>
-                        <i><img className='Home-container-2-img' alt='img' src='/images/adults-english@300x.png' /></i>
-                        <i><img className='Home-container-2-img' alt='img' src='/images/adults-french@300x.png' /></i>
-                        <i><img className='Home-container-2-img' alt='img' src='/images/adults-spanish@300x.png' /></i>
-                        <i><img className='Home-container-2-img' alt='img' src='/images/adults-german@300x.png' /></i>
-                        <i><img className='Home-container-2-img' alt='img' src='/images/adults-mandarin@300x.png' /></i>
-                        <i><img className='Home-container-2-img' alt='img' src='/images/adults-japanese@300x.png' /></i>
-                        <i><img className='Home-container-2-img' alt='img' src='/images/adults-korean@300x.png' /></i>
+                        <a><img className='Home-container-2-img' alt='img' src='/images/adults-english@300x.png' /></a>
+                        <a><img className='Home-container-2-img' alt='img' src='/images/adults-french@300x.png' /></a>
+                        <a><img className='Home-container-2-img' alt='img' src='/images/adults-spanish@300x.png' /></a>
+                        <a><img className='Home-container-2-img' alt='img' src='/images/adults-german@300x.png' /></a>
+                        <a><img className='Home-container-2-img' alt='img' src='/images/adults-mandarin@300x.png' /></a>
+                        <a><img className='Home-container-2-img' alt='img' src='/images/adults-japanese@300x.png' /></a>
+                        <a><img className='Home-container-2-img' alt='img' src='/images/adults-korean@300x.png' /></a>
                     </div>
                 </div>
 
