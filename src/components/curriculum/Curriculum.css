@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
 
 .curriculum{
     position: relative;
@@ -111,4 +114,16 @@
     background-attachment: fixed;
     background-size: cover;
     position: relative;
+}
+
+.bgimg-2{
+    background-image: url("/public//images/Adolscents\ bg_1@300x.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.infosec{
+    background-image: url('/public//images//sof__3bg2.png');
 }

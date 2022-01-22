@@ -5,16 +5,6 @@ const tick = "/images/check-mark@20.png"
 function TableData() {
     const tdata = [
         {   
-            title: "Placement",
-            Introductory: cross,
-            LevelA1: cross,
-            LevelA2: cross,
-            LevelB1: cross,
-            LevelB2: tick,
-            LevelA1A2: cross, 
-            LevelA1A2B1B2: tick
-        },
-        {   
             title: "Mentoring Sessions",
             Introductory: cross,
             LevelA1: tick,
@@ -25,15 +15,6 @@ function TableData() {
             LevelA1A2B1B2: tick
         },
         {   
-            title: "Internship",
-            Introductory: cross,
-            LevelA1: cross,
-            LevelA2: tick,
-            LevelB1: tick,
-            LevelB2: tick,
-            LevelA1A2: tick,
-            LevelA1A2B1B2: tick
-        },{   
             title: "Exam Prep",
             Introductory: cross,
             LevelA1: tick,
@@ -87,6 +68,16 @@ function TableData() {
             LevelB2: tick,
             LevelA1A2: tick,
             LevelA1A2B1B2: tick
+        },
+        {   
+            title: "Parent Info System",
+            Introductory: tick,
+            LevelA1: tick,
+            LevelA2: tick,
+            LevelB1: tick,
+            LevelB2: tick,
+            LevelA1A2: tick,
+            LevelA1A2B1B2: tick
         },{   
             title: "Instant Review",
             Introductory: tick,
@@ -119,10 +110,9 @@ function TableData() {
     return tdata;
 }
 
-export default function AdultsTable() {
+export default function AdolescentsTable() {
     const tableData = TableData();
-    return (
-        <>
+    return (<>
         <div className="h-full font-medium text-4xl poppins text-center p-20">Why learning with TLN is beneficial?</div>
         <div className='py-10'>
             <table class='shadow-md rounded w-5/6 m-auto'>
