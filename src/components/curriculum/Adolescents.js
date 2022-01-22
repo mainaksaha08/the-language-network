@@ -16,6 +16,13 @@ function Adolescents() {
                     <a><img className='Home-container-2-img' alt='img' src='/images/Adolcents-Korean@300x.png' /><span className='Home-container-2-img-span'>Korean</span> </a>
                 </div>
             </div>
+            <div className='h-[85vh] px-80 text-center flex flex-column items-center justify-center bgimg'>
+                <h1 className='text-white font-semibold text-4xl mb-12'>Foreign Language Education for Everyone!</h1>
+                <p className='text-white font-medium text-lg px-4 mt-2'>Live online language classes for kids, adolscents and adults at The Language Network, pioneering online language schools, with the assistance of professional teachers.</p>
+                <p className='text-white font-medium text-lg px-4 mt-2 mb-3'>With our professional live online language classes, TLN is the complete solution to perfectly assist kids in their path to fluency.</p>
+                <button type="button" class="btn btn-outline-light rounded-xl px-8 py-3 font-medium">Book A Trial Class</button>
+                <img src="/images/adolscents-book@300x.png" alt="alt" className='w-3/5 curvedBg' />
+            </div>
         </div>
     )
 }

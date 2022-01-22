@@ -12,13 +12,13 @@ class Header extends react.Component {
 
     function expand () {
       document.getElementById('curriList').style.visibility='visible';
-      document.getElementById('curriList').style.top='51px';
+      document.getElementById('curriList').style.top='80px';
       document.getElementById('curriList').style.height='100%'
       
     }
     function retract () {
       document.getElementById('curriList').style.visibility='hidden';
-      document.getElementById('curriList').style.top='25px';
+      document.getElementById('curriList').style.top='55px';
       document.getElementById('curriList').style.height='0%'
 
     }
@@ -115,7 +115,7 @@ class Header extends react.Component {
         <span>Curriculum</span>
       </a>
       <a href='/#'>
-        <span id='curriculum'  onMouseOver={expand} onMouseLeave={retract}>
+        <span id='curriculum' style={{padding: '31px 0px'}}  onMouseOver={expand} onMouseLeave={retract}>
           courses
           <IoIosArrowDown />
 
@@ -249,7 +249,7 @@ const NavMenu = styled.div`
       font-weight: 500;
       letter-spacing: 1.42px;
       line-height: 1.08;
-      padding: 2px 0px;
+      padding: 3px 0px;
       white-space: nowrap;
       position: relative;
       text-decoration: none;

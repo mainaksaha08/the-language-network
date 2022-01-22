@@ -5,10 +5,11 @@ import ReactDOM from 'react-dom';
 
 
 export default function Curriculum() {
-    return (
+    return (<>
         <div className='curriculum'>
             <Sec1 />
             <Sec2 />
         </div>
+    </>
     )
 }

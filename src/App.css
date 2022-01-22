@@ -1,4 +1,6 @@
 .App{
     position: relative;
     overflow: hidden;
+    background-color: white;
+    /* background: fixed; */
 }
