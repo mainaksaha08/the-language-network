@@ -1,6 +1,10 @@
 import React from 'react';
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 export default function Sec3() {
+
+    AOS.init()
 
     function changeCol1() {
         document.getElementById('Home-card-text-h1').style.color = '#460090';
@@ -68,5 +72,45 @@ export default function Sec3() {
                 </div>
             </div>
         </div>
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-20 mx-auto">
+                <div class="flex items-center lg:w-11/12 mx-auto sm:flex-row flex-col">
+                    <div data-aos="fade-right" data-aos-mirror='true' data-aos-delay='200' class="h-96 w-96 sm:mr-24 inline-flex items-center justify-center flex-shrink-0">
+                        <img src="/images/account.png" alt="img" className='' />
+                    </div>
+                    <div class="flex-grow sm:text-left mt-6 sm:mt-0">
+                        <h1 className='text-xl tracking-widest font-medium text-black'>STEP 1</h1>
+                        <h2 class="poppins partial-underline text-[#f2b919] text-2xl font-medium mb-8">Register with us</h2>
+                        <p class="leading-relaxed text-black ">Fill out a form with your personal and contact information, choose your language and register with us. Our team of experts will will assist you with the online classes, study materials and lots more.</p>
+                    </div>
+                </div>
+                <div class="flex items-center lg:w-11/12 mx-auto sm:flex-row flex-col">
+                    <div class="flex-grow sm:text-right sm:mr-24 mt-6 sm:mt-0">
+                        <h1 className='text-xl tracking-widest font-medium text-black'>STEP 2</h1>
+                        <h2 class="poppins partial-underline-right text-[#f2b919] text-2xl font-medium mb-8">Access your virtual classroom</h2>
+                        <p class="leading-relaxed text-black ">Learn on your own schedule: Based on your type of class you chose (Eg: Group, Duo or 1:1) You will be provided with the zoom link to join your respective language class.</p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-mirror='true' data-aos-delay='200' class="h-96 w-96 sm:mr-24 inline-flex items-center justify-center flex-shrink-0">
+                        <img src="/images/classroom.png" alt="img" className='' />
+                    </div>
+                </div>
+                <div class="flex items-center lg:w-11/12 mx-auto sm:flex-row flex-col">
+                    <div data-aos="fade-right" data-aos-mirror='true' data-aos-delay='200' class="h-96 w-96 sm:mr-24 inline-flex items-center justify-center flex-shrink-0">
+                        <img src="/images/get-started.png" alt="img" className='' />
+                    </div>
+                    <div class="flex-grow sm:text-left mt-6 sm:mt-0">
+                        <h1 className='text-xl tracking-widest font-medium text-black'>STEP 3</h1>
+                        <h2 class="poppins partial-underline text-[#f2b919] text-2xl font-medium mb-8">Get started</h2>
+                        <p class="leading-relaxed text-black ">Practice what you learn with other students. We provide small batches, so you’ll get personalized attention with the expert language teachers.</p>
+                    </div>
+                </div>
+
+            <div className='w-full flex  justify-center'>
+            <button class="bg-teal-500 hover:bg-teal-400 text-white font-bold py-3 px-4 rounded" >
+                Book A Trial Class
+            </button>
+            </div>
+            </div>
+        </section>
     </div>;
 }

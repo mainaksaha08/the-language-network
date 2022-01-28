@@ -63,7 +63,6 @@
     width: 100%;
     padding: 3%;
     border-radius: 27px;
-    /* height: auto; */
 }
 
 .Home-container-2{
@@ -94,7 +93,6 @@
 }
 
 .Home-container-2-imgs{
-    /* width: 5%; */
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -121,12 +119,10 @@
 }
 
 .Home-container-2-img{
-    /* width: 100%; */
     height: 90%;
     transition: all 0.2s;
 }
 .Home-container-2-img:hover{
-    /* width: 100%; */
     height: 100%;
 }
 
@@ -174,11 +170,6 @@
 
 }
 
-/* .Home-cards:hover{
-    box-shadow: 0px 0px 8px 8px #eae8dd;
-} */
-
-
 .Home-card-text{
     text-align: center;
     border-radius: 14px 14px 0px 0px;
@@ -199,7 +190,7 @@
 
 .Home-card-text > p{
     line-height: 28px;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .Home-card-img{
@@ -272,8 +263,6 @@
     text-align: center;
     font-size: 18px;
     background: #fff;
-  
-    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -287,13 +276,6 @@
     -webkit-align-items: center;
     align-items: center;
   }
-  
-  /* .swiper-slide img {
-    display: block;
-    width: 85%;
-    height: 100%;
-    object-fit: cover;
-  } */
 
   :root {
     --swiper-theme-color: #000;
@@ -370,7 +352,6 @@
     justify-content: center;
     align-items: center;
 }
-
 
 .progress {
     width: 150px;
@@ -570,8 +551,6 @@
 }
 
 .card .title {
-    /* font-weight: 600; */
-    /* font-size: 1rem; */
     text-align: center;
     margin-bottom: 15px;
 }
@@ -666,7 +645,6 @@
     font-family: 'Poppins',Sans-serif;
     font-size: 17px;
     font-weight: 500;
-    /* text-transform: uppercase; */
     letter-spacing: 1.5px;
 }
 
@@ -781,7 +759,6 @@
     font-style: normal;
     line-height: 30px;
     color: rgb(19, 191, 171);
-    /* font-weight: bold; */
 }
 
 .overlay-box > h2 {
@@ -805,16 +782,11 @@
     height: 80vh;
 }
 
-/* .object-cover {
-    object-fit: contain;
-} */
-
 .font-poppins{
     font-family: 'Poppins', sans-serif ;
 }
 
 .testi-slides{
-    
     height: 500px;
 }
 

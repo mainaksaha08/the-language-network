@@ -127,3 +127,20 @@
 .infosec{
     background-image: url('/public//images//sof__3bg2.png');
 }
+
+.partial-underline::after {
+    content: "";
+    display: block;
+    width: 20%;
+    padding-top: 10px;
+    border-bottom: 3px solid #f2b919;
+  }
+
+  .partial-underline-right::after {
+    content: "";
+    float: right;
+    display: block;
+    width: 30%;
+    padding-top: 10px;
+    border-bottom: 3px solid #f2b919;
+  }
