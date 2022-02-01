@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.swiper-button-next:after {
+    display: none;
+}
+.swiper-button-next{
+    background-image: none;
+    background-image: url('/public//images/next-arow-5738.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+ }
+
+ .swiper-button-prev:after {
+    display: none;
+}
+.swiper-button-prev{
+    background-image: none;
+    background-image: url('/public//images/prev-arow-5738.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+ }
+
 .Home{
     display: flex;
     flex-direction: column;
@@ -19,6 +43,7 @@
     background-size: contain;
     background-position: right;
 }
+
 
 .Home-container-1-sec-1 {
     width: 55%;
@@ -65,8 +90,59 @@
     border-radius: 27px;
 }
 
-.Home-container-2{
+.smallscr{
+    display: none;
+    margin-top: 2rem;
     width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.overlay-box2{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px 0 rgb(163 163 163 / 11%);
+    width: 6.5rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;    
+    border-radius: 20px 20px 20px 20px;
+    /* margin-inline: 20px; */
+}
+
+
+.overlay-box2 > h1 {
+    position: relative;
+    font-family: 'Poppins',Sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 30px;
+    color: rgb(19, 191, 171);
+}
+
+.overlay-box2 > h2 {
+    font-weight: 400;
+    line-height: 2.5;
+    font-family: 'Poppins',Sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.stars2{
+    display: flex;
+    flex-direction: row;
+    color: #ffab1b;
+    font-size: 11px;
+    padding: 0.5rem 0rem;
+}
+
+
+
+.Home-container-2{
+    width: 80%;
+    text-align: center;
     padding-top: 100px;
     display: flex;
     flex-direction: column;
@@ -131,6 +207,7 @@
     flex-direction: column;
     align-items: center;
     width: 64%;
+    text-align: center;
 }
 
 .Home-container-3 > h1{
@@ -171,8 +248,9 @@
 }
 
 .Home-card-text{
+    height: 100%;
     text-align: center;
-    border-radius: 14px 14px 0px 0px;
+    border-radius: 14px 14px 14px 14px;
     padding: 42px 20px;   
     background-color: #f1f2f3; 
 }
@@ -749,7 +827,6 @@
     margin-inline: 20px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 .overlay-box > h1 {
     position: relative;

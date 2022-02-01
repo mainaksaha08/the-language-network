@@ -1,183 +1,150 @@
 import styled from 'styled-components';
 import React from 'react';
 import { IoIosArrowDown } from 'react-icons/io';
-import {GiHamburgerMenu} from 'react-icons/gi';
+import { GiHamburgerMenu } from 'react-icons/gi';
 import react from 'react';
-import {AiOutlineCloseSquare} from 'react-icons/ai';
+import { AiOutlineCloseSquare } from 'react-icons/ai';
 
 
 class Header extends react.Component {
 
   render() {
 
-    function expand () {
-      document.getElementById('curriList').style.visibility='visible';
-      document.getElementById('curriList').style.top='80px';
-      document.getElementById('curriList').style.height='100%'
-      
+    function expand() {
+      document.getElementById('curriList').style.visibility = 'visible';
+      document.getElementById('curriList').style.top = '11vh';
+      // document.getElementById('curriList').style.height='auto';
+      document.getElementById('curriList').style.opacity = '1';
     }
-    function retract () {
-      document.getElementById('curriList').style.visibility='hidden';
-      document.getElementById('curriList').style.top='55px';
-      document.getElementById('curriList').style.height='0%'
+    function retract() {
+      document.getElementById('curriList').style.visibility = 'hidden';
+      document.getElementById('curriList').style.top = '9vh';
+      // document.getElementById('curriList').style.height='0%';
+      document.getElementById('curriList').style.opacity = '0';
+    }
+    function menuBackExpand() {
+      document.getElementById('overlay').style.width = '100vw';
+      document.getElementById('sidemenu').style.width = '60vw';
+    }
 
-    }
-    function menuBackExpand () {
-      document.getElementById('overlay').style.width='100vw';
-      document.getElementById('sidemenu').style.width='60vw';
+    function menuBackRetract() {
+      document.getElementById('sidemenu').style.width = '0vw';
+      setTimeout(function wait() {
+        document.getElementById('overlay').style.width = '0vw';
+      }, 500);
     }
 
-    function menuBackRetract () {
-      document.getElementById('sidemenu').style.width='0vw';
-      setTimeout(function wait(){
-        document.getElementById('overlay').style.width='0vw';
-    }, 500);
-    }
-    
     function curriListMExpand() {
       var text2 = "100%"
       var dom = document.getElementById('curriListM')
       var height = dom.style.height;
       var compare = height.localeCompare(text2);
       if (compare == -1) {
-        dom.style.height='100%';
+        dom.style.height = '100%';
       }
-      else if(compare == 0) {
-        dom.style.height='0';   
-        }
+      else if (compare == 0) {
+        dom.style.height = '0';
+      }
     }
 
 
-    return(    
-   <Nav>
-     <Overlay id='overlay' onMouseDown={menuBackRetract}>
-     </Overlay>
-     <Sidemenu id='sidemenu'>
-        <CloseBtn>
-          <AiOutlineCloseSquare style={{color: '#000', float: 'right', fontSize: '37px'}} onMouseDown={menuBackRetract}/>
-        </CloseBtn>
-        <Lists>
-          <li>Curriculum</li>
-          <li onMouseDown={curriListMExpand}>Courses
-          <IoIosArrowDown />
-          </li>
-          <div id='curriListM' >
-            <ul>
-              <span>KIDS COURSES</span>
-              <a href=''>English for kids</a>
-              <a href=''>French for kids</a>
-              <a href=''>Spanish for kids</a>
-              <a href=''>German for kids</a>
-              <a href=''>Mandarin for kids</a>
-              <a href=''>Japanese for kids</a>
-              <a href=''>Korean for kids</a>
-            </ul>
-            <ul>
-              <span>ADOLESCENTS COURSES</span>
-              <a>English for adolescents</a>
-              <a>French for adolescents</a>
-              <a>Spanish for adolescents</a>
-              <a>German for adolescents</a>
-              <a>Mandarin for adolescents</a>
-              <a>Japanese for adolescents</a>
-              <a>Korean for adolescents</a>
-            </ul>
-            <ul>
-              <span>KIDS COURSES</span>
-              <a>Introductory Courses</a>
-              <a>Learn English</a>
-              <a>Learn French</a>
-              <a>Learn Spanish</a>
-              <a>Learn German</a>
-              <a>Learn Mandarin</a>
-              <a>Learn Japanese</a>
-              <a>Learn Korean</a>
-            </ul>
-            <ul>
-              <span>PRICING</span>
-              <a>English</a>
-              <a>French</a>
-              <a>Spanish</a>
-              <a>German</a>
-              <a>Mandarin</a>
-              <a>Japanese</a>
-              <a>Korean</a>
-            </ul>
-          </div>
-          <li>Book a free trail</li>
-        </Lists>
-     </Sidemenu>
-    <Logo href='/#'>
-      <img src="/images/Logo-website.png" alt="Logo" />
-    </Logo>
-    <NavMenu>
-      <a href='/curriculum'>
-        <span>Curriculum</span>
-      </a>
-      <a href='/#'>
-        <span id='curriculum' style={{padding: '31px 0px'}}  onMouseOver={expand} onMouseLeave={retract}>
-          courses
-          <IoIosArrowDown />
+    return (
+      <Nav>
+        <Overlay id='overlay' onMouseDown={menuBackRetract}>
+        </Overlay>
+        <Sidemenu id='sidemenu'>
+          <CloseBtn>
+            <AiOutlineCloseSquare style={{ color: '#000', float: 'right', fontSize: '37px' }} onMouseDown={menuBackRetract} />
+          </CloseBtn>
+          <Lists>
+            <li>Curriculum</li>
+            <li onMouseDown={curriListMExpand}>Courses
+              <IoIosArrowDown />
+            </li>
+            <div id='curriListM' >
+              <ul>
+                <span>KIDS COURSES</span>
+                <a href=''>English for kids</a>
+                <a href=''>French for kids</a>
+                <a href=''>Spanish for kids</a>
+                <a href=''>German for kids</a>
+                <a href=''>Mandarin for kids</a>
+                <a href=''>Japanese for kids</a>
+                <a href=''>Korean for kids</a>
+              </ul>
+              <ul>
+                <span>ADOLESCENTS COURSES</span>
+                <a>English for adolescents</a>
+                <a>French for adolescents</a>
+                <a>Spanish for adolescents</a>
+                <a>German for adolescents</a>
+                <a>Mandarin for adolescents</a>
+                <a>Japanese for adolescents</a>
+                <a>Korean for adolescents</a>
+              </ul>
+              <ul>
+                <span>KIDS COURSES</span>
+                <a>Introductory Courses</a>
+                <a>Learn English</a>
+                <a>Learn French</a>
+                <a>Learn Spanish</a>
+                <a>Learn German</a>
+                <a>Learn Mandarin</a>
+                <a>Learn Japanese</a>
+                <a>Learn Korean</a>
+              </ul>
+              <ul>
+                <span>PRICING</span>
+                <a>English</a>
+                <a>French</a>
+                <a>Spanish</a>
+                <a>German</a>
+                <a>Mandarin</a>
+                <a>Japanese</a>
+                <a>Korean</a>
+              </ul>
+            </div>
+            <li>Book a free trail</li>
+          </Lists>
+        </Sidemenu>
+        <Logo href='/#'>
+          <img src="/images/Logo-website.png" alt="Logo" />
+        </Logo>
+        <NavMenu>
+          <a href='/curriculum'>
+            <span>Curriculum</span>
+          </a>
+          <a>
+            <span id='curriculum' style={{ padding: '31px 0px' }} onMouseOver={expand} onMouseLeave={retract}>
+              courses
+              <IoIosArrowDown />
 
-         <div id='curriList' >
-            <ul>
-              <span>KIDS COURSES</span>
-              <a href=''>English for kids</a>
-              <a href=''>French for kids</a>
-              <a href=''>Spanish for kids</a>
-              <a href=''>German for kids</a>
-              <a href=''>Mandarin for kids</a>
-              <a href=''>Japanese for kids</a>
-              <a href=''>Korean for kids</a>
-            </ul>
-            <ul>
-              <span>ADOLESCENTS COURSES</span>
-              <a href=''>English for adolescents</a>
-              <a href=''>French for adolescents</a>
-              <a href=''>Spanish for adolescents</a>
-              <a href=''>German for adolescents</a>
-              <a href=''>Mandarin for adolescents</a>
-              <a href=''>Japanese for adolescents</a>
-              <a href=''>Korean for adolescents</a>
-            </ul>
-            <ul>
-              <span>KIDS COURSES</span>
-              <a href=''>Introductory Courses</a>
-              <a href=''>Learn English</a>
-              <a href=''>Learn French</a>
-              <a href=''>Learn Spanish</a>
-              <a href=''>Learn German</a>
-              <a href=''>Learn Mandarin</a>
-              <a href=''>Learn Japanese</a>
-              <a href=''>Learn Korean</a>
-            </ul>
-            <ul>
-              <span>PRICING</span>
-              <a href=''>English</a>
-              <a href=''>French</a>
-              <a href=''>Spanish</a>
-              <a href=''>German</a>
-              <a href=''>Mandarin</a>
-              <a href=''>Japanese</a>
-              <a href=''>Korean</a>
-            </ul>
-          </div>
-        </span>
-      </a>
+              <div id='curriList' >
+                <a href='/KidsAndAdolescentsCourses'>
+                  <img src="/images/CAAC-Header-176x176.png" alt="img" />
+                  <span>KIDS & ADOLESCENTS COURSES</span>
+                </a>
+                <a href='AdultsCourses'>
+                  <img src="/images/adults@300x.png" alt="img" />
+                  <span>ADULTS COURSES</span>
+                </a>
+              </div>
+            </span>
+          </a>
 
-    </NavMenu>
-    <Trial>
-      <span>
-        Book a free trial
-      </span>
-      
-    </Trial>
-    <Menu onMouseDown={menuBackExpand}>
-        <GiHamburgerMenu style={{color: 'rgb(0 0 0)', width: "75%", height: '100%'}}/>
-    </Menu>
-  </Nav>
+        </NavMenu>
+        <Trial>
+          <span>
+            Book a free trial
+          </span>
+
+        </Trial>
+        <Menu onMouseDown={menuBackExpand}>
+          <GiHamburgerMenu style={{ color: 'rgb(0 0 0)', width: "75%", height: '100%' }} />
+        </Menu>
+      </Nav>
     )
-}
+  }
 }
 
 
@@ -223,7 +190,7 @@ const NavMenu = styled.div`
   align-items: center;
   display: flex;
   flex-flow: row nowrap;
-  height: 100%;
+  height: auto;
   justify-content: flex-end;
   margin: 0px;
   padding: 0px;
@@ -237,7 +204,7 @@ const NavMenu = styled.div`
     padding: 0 12px;
     img {
       height: 20px;
-      min-width: 20px;
+      /* min-width: 20px; */
       width: 20px;
       z-index: auto;
     }
@@ -253,51 +220,55 @@ const NavMenu = styled.div`
       white-space: nowrap;
       position: relative;
       text-decoration: none;
-      /* transition: all 0.2s ease 0s; */
-        &:hover {
+        /* &:hover {
           color: #707070;
-        }
+        } */
         
     div {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-around;
-        color: white;
         background-color: #ffffff;
         box-shadow: 0px 0px 8px 0px rgb(216 216 216 / 50%);
         position: absolute;
-        padding-inline: 150px;
         margin: 0;
-        left: -356px;
+        left: -41px;
         transition: all 0.2s ease 0s;
-        top: 25px;
-        width: 100vw;
-        min-height: 30vh;
+        top: 9vh;
         overflow: visible;
         visibility: hidden;
-        opacity: 1;
+        opacity: 0;
+        width: 22rem;
         
-        
-        ul{
+        a{
           display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          height: 4rem;
+          margin: 0;
+          padding: 0rem 1.5rem;
+          transition: all 0.2s ease 0s;
+
+
+          &:hover{          
+              background-color: #a3ede3;  
+              span{
+                color: #707070;        
+              }
+          }
+
 
           span{
-            font-size: 16px;
+            padding-left: 1rem;
+            font-size: 14px;
             font-weight: 500;
             font-family: 'roboto',Sans-serif;
           }
-          a {
-            font-family: 'Poppins',sans-serif;
-            font-size: 11px;
-            color: #777;
-            padding: 0;
-            text-decoration: none;
-            &:hover{
-              color: #40cbbb;
-            }
+          img{
+            width: 2rem;
+            height: 2rem;
+          }
           }
         }
 

@@ -41,7 +41,7 @@ function Adolescents() {
 
     return (
         <div>
-            <div className="Home-container-2 px-5 fadeIN">
+            <div className="Home-container-2 px-5 fadeIN" style={{width: '100%'}}>
                 <h2>A Fun, Proven method for Learning</h2>
                 <h1 className='mb-12'>Choose a language</h1>
                 <div className='Home-container-2-imgs'>

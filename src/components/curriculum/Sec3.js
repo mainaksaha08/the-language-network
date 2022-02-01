@@ -58,8 +58,8 @@ export default function Sec3() {
                     <img src='/images/Kids@300x-1.png' alt='img' />
                 </div>
                 <div className='Home-card-text'>
-                    <h1 id='Home-card-text-h2'>Kids (6-9 years)</h1>
-                    <p>Children in this age range can learn any foreign language with the right professional assistance. Kids have a high sense of creativity and imagination. At, TLN we know how to use this imagination and methodically focuses on aspects of language that boost performance and imagination</p>
+                    <h1 id='Home-card-text-h2'>Adolscents (10-13 years)</h1>
+                    <p>Students in this age group are usually energetic, curious, and eager to explore the world! At TLN, we teach more than just the language. We take you through the culture; traditions, clothing, food, festivals, etc. This means that you are learning more than the writing system or pronunciation.</p>
                 </div>
             </div>
             <div className="Home-cards" id='Home-card-3' onMouseOver={changeCol3} onMouseLeave={changeBack}>
@@ -67,8 +67,8 @@ export default function Sec3() {
                     <img src='/images/adults@300x.png' alt='img' />
                 </div>
                 <div className='Home-card-text'>
-                    <h1 id='Home-card-text-h3'>Kids (6-9 years)</h1>
-                    <p>Children in this age range can learn any foreign language with the right professional assistance. Kids have a high sense of creativity and imagination. At, TLN we know how to use this imagination and methodically focuses on aspects of language that boost performance and imagination</p>
+                    <h1 id='Home-card-text-h3'>Adults (14+ years)</h1>
+                    <p>Getting a certificate is an essential part of verifying your language skills. TLN prepares you for all types of language exams with the professional assistance of highly-qualified teachers. We also offer online classes per your convenience.</p>
                 </div>
             </div>
         </div>
@@ -91,12 +91,12 @@ export default function Sec3() {
                         <p class="leading-relaxed text-black ">Learn on your own schedule: Based on your type of class you chose (Eg: Group, Duo or 1:1) You will be provided with the zoom link to join your respective language class.</p>
                     </div>
                     <div data-aos="fade-left" data-aos-mirror='true' data-aos-delay='200' class="h-96 w-96 sm:mr-24 inline-flex items-center justify-center flex-shrink-0">
-                        <img src="/images/classroom.png" alt="img" className='' />
+                        <img src="/images/classroom.png" alt="img"/>
                     </div>
                 </div>
                 <div class="flex items-center lg:w-11/12 mx-auto sm:flex-row flex-col">
                     <div data-aos="fade-right" data-aos-mirror='true' data-aos-delay='200' class="h-96 w-96 sm:mr-24 inline-flex items-center justify-center flex-shrink-0">
-                        <img src="/images/get-started.png" alt="img" className='' />
+                        <img src="/images/get-started.png" alt="img"/>
                     </div>
                     <div class="flex-grow sm:text-left mt-6 sm:mt-0">
                         <h1 className='text-xl tracking-widest font-medium text-black'>STEP 3</h1>

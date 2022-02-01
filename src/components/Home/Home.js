@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import './homeRes.css'
 import { FaCircle } from 'react-icons/fa';
 import { AiFillStar } from 'react-icons/ai';
 import react from 'react';
@@ -13,6 +13,7 @@ import "swiper/css/navigation"
 import SwiperCore, {
     Autoplay, Pagination, Navigation
 } from 'swiper';
+import './Home.css';    
 
 import Display from "./Display";
 
@@ -92,8 +93,37 @@ class Home extends react.Component {
                         </video>
                     </div>
                 </div>
+                <div className="smallscr">
+                        <div className='overlay-box2'>
+                            <h1><CountUp start={0} end={5000} separator=","
+                                suffix="+" duration={1}>
+                                {({ countUpRef, start }) => (
+                                    <VisibilitySensor onChange={start}>
+                                        <span ref={countUpRef} />
+                                    </VisibilitySensor>
+                                )}
+                            </CountUp></h1>
+                            <h2>Students</h2>
+                        </div>
+                        <div className='overlay-box2'>
+                            <div className='stars2'><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /></div>
+                            <h2>5 Star Rating</h2>
+                        </div>
+                        <div className='overlay-box2'>
+                            <h1><CountUp start={0} end={200} separator=","
+                                suffix="+" duration={1}>
+                                {({ countUpRef, start }) => (
+                                    <VisibilitySensor onChange={start}>
+                                        <span ref={countUpRef} />
+                                    </VisibilitySensor>
+                                )}
+                            </CountUp></h1>
+                            <h2>Expert Trainers</h2>
+                        </div>
 
-                <div className="Home-container-2" style={{width: '80%'}}>
+                    </div>
+
+                <div className="Home-container-2" >
                     <h1>START YOUR JOURNEY WITH US!</h1>
                     <h2>Select a Foreign Language Course</h2>
                     <div className='Home-container-2-imgs'>
@@ -131,8 +161,8 @@ class Home extends react.Component {
                             <img src='/images/Kids@300x-1.png' alt='img' />
                         </div>
                         <div className='Home-card-text'>
-                            <h1 id='Home-card-text-h2'>Kids (6-9 years)</h1>
-                            <p>Children in this age range can learn any foreign language with the right professional assistance. Kids have a high sense of creativity and imagination. At, TLN we know how to use this imagination and methodically focuses on aspects of language that boost performance and imagination</p>
+                            <h1 id='Home-card-text-h2'>Adolscents (10-13 years)</h1>
+                            <p>Students in this age group are usually energetic, curious, and eager to explore the world! At TLN, we teach more than just the language. We take you through the culture; traditions, clothing, food, festivals, etc. This means that you are learning more than the writing system or pronunciation.</p>
                         </div>
                     </div>
                     <div className="Home-cards" id='Home-card-3' onMouseOver={changeCol3} onMouseLeave={changeBack}>
@@ -140,8 +170,8 @@ class Home extends react.Component {
                             <img src='/images/adults@300x.png' alt='img' />
                         </div>
                         <div className='Home-card-text'>
-                            <h1 id='Home-card-text-h3'>Kids (6-9 years)</h1>
-                            <p>Children in this age range can learn any foreign language with the right professional assistance. Kids have a high sense of creativity and imagination. At, TLN we know how to use this imagination and methodically focuses on aspects of language that boost performance and imagination</p>
+                            <h1 id='Home-card-text-h3'>Adults (14+ years)</h1>
+                            <p>Getting a certificate is an essential part of verifying your language skills. TLN prepares you for all types of language exams with the professional assistance of highly-qualified teachers. We also offer online classes per your convenience.</p>
                         </div>
                     </div>
                 </div>
@@ -169,7 +199,17 @@ class Home extends react.Component {
                         <h1>WE PREPARE YOU FOR</h1>
                         <h2>International Exams</h2>
                     </div>
-                    <Swiper slidesPerView={3} spaceBetween={5} loop={true} loopFillGroupWithBlank={true} pagination={{
+                    <Swiper  spaceBetween={5} loop={true} loopFillGroupWithBlank={true}
+                    breakpoints={{
+                        640: {
+                          slidesPerView : 1
+
+                        },
+                        768: {
+                          slidesPerView : 3
+                        }
+                      }}
+                    pagination={{
                         "clickable": true
                     }} navigation={true} autoplay={{
                         "delay": 2500,

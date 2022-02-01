@@ -1,0 +1,94 @@
+@media only screen and (max-width: 768px) {
+    .Home-container-1{
+        padding-top: 2.2rem;
+        flex-direction: column;
+        height: auto;
+        background-size: cover;
+    }
+    .Home-container-1-sec-1{
+        width: 100%;
+    }
+    .Home-container-1-sec-2{
+        width: 100%;
+    }
+    .Home-container-1-sec-1 > h1{
+        font-size: 14px;
+    }
+    .Home-container-1-sec-1 > h2{
+        font-size: 25px;
+    }
+    .Home-container-1-sec-1 > span{
+        font-size: 14px;
+    }
+    .Home-container-1-sec-1-video{
+        padding-top: 3rem;
+    }
+    .smallscr{
+        display: flex;
+    }
+    .Home-container-2{
+        width: 100%;
+    }
+    .Home-container-2-imgs{
+        flex-wrap: wrap;
+    }
+    .Home-container-2 > h2{
+        font-size: 23px;
+    }
+    .Home-container-3{
+        width: 80%;
+    }
+    
+    .Home-container-3 > h1{
+        font-size: 27px;  
+    }
+    .Home-container-3 > p{
+        font-size: 15px;
+    }
+    .Home-container-4{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .Home-cards{
+        width: 100%;   
+    }
+    .Home-container-5{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 0rem;
+    }
+    
+    .Home-container-5-sec-1{
+        width: 80%;
+        padding: 0px;
+    }
+    
+    .Home-container-5-sec-2{
+        width: 100%;
+    }
+    
+    .Home-container-5-sec-2 > img{
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+    }
+    
+    .Home-container-5-sec-1 > h1{
+        font-size: 23px;
+    }
+
+    .Home-container-6{
+        height: auto;
+        padding: 0;    
+    }
+
+    
+    .Home-container-6-text > h1{
+        font-size: 17px;
+    }
+    
+    .Home-container-6-text > h2{
+        font-size: 27px;
+    }
+}

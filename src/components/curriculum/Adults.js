@@ -38,7 +38,7 @@ function Adults() {
 
     return (
         <div>
-            <div className="Home-container-2 px-5 fadeIN">
+            <div className="Home-container-2 px-5 fadeIN" style={{width: '100%'}}>
                 <h2>Curating a pleasant learning experience</h2>
                 <h1 className='mb-6'>Choose a language</h1>
                 <div className='Home-container-2-imgs'>

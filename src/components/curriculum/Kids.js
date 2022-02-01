@@ -39,7 +39,7 @@ function Kids() {
 
     return (
         <div>
-            <div className="Home-container-2 px-5 fadeIN mb-24">
+            <div className="Home-container-2 px-5 fadeIN mb-24" style={{width: '100%'}}>
                 <h2>Bring The World To Your Child</h2>
                 <h1 className='mb-12'>Choose a language</h1>
                 <div className='Home-container-2-imgs'>
