@@ -33,7 +33,7 @@ export default function PricingTable(props) {
                         <i class="fa fa-briefcase"></i>
                         <div class="price-value flex flex-col"> ₹0000 <span className='text-[1.4rem] line-through'>₹0000</span> <span class="month">per month</span> </div>
                     </div>
-                    <h3 class="heading">Batch A1</h3>
+                    <h3 class="heading">Batch A2</h3>
                     <div class="pricing-content">
                         <ul>
                             <li><b>1.</b> Content 1</li>
@@ -54,7 +54,7 @@ export default function PricingTable(props) {
                         <i class="fa fa-diamond"></i>
                         <div class="price-value flex flex-col"> ₹0000 <span className='text-[1.4rem] line-through'>₹0000</span> <span class="month">per month</span> </div>
                     </div>
-                    <h3 class="heading">Batch A1</h3>
+                    <h3 class="heading">Batch B1</h3>
                     <div class="pricing-content">
                         <ul>
                             <li><b>1.</b> Content 1</li>
@@ -75,7 +75,7 @@ export default function PricingTable(props) {
                         <i class="fa fa-cube"></i>
                         <div class="price-value flex flex-col"> ₹0000 <span className='text-[1.4rem] line-through'>₹0000</span> <span class="month">per month</span> </div>
                     </div>
-                    <h3 class="heading">Batch A1</h3>
+                    <h3 class="heading">Batch B2</h3>
                     <div class="pricing-content">
                         <ul>
                             <li><b>1.</b> Content 1</li>
