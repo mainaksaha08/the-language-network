@@ -111,20 +111,24 @@ class Header extends react.Component {
           <img src="/images/Logo-website.png" alt="Logo" />
         </Logo>
         <NavMenu>
-          <a href='/curriculum'>
+          {/* <a href='/curriculum'>
             <span>Curriculum</span>
-          </a>
+          </a> */}
           <a>
-            <span id='curriculum' style={{ padding: '31px 0px' }} onMouseOver={expand} onMouseLeave={retract}>
+            <span id='curriculum' className='hover:text-teal-600' style={{ padding: '31px 0px' }} onMouseOver={expand} onMouseLeave={retract}>
               courses
               <IoIosArrowDown />
 
               <div id='curriList' >
-                <a href='/KidsAndAdolescentsCourses'>
+                <a href='/KidsCourses'>
                   <img src="/images/CAAC-Header-176x176.png" alt="img" />
-                  <span>KIDS & ADOLESCENTS COURSES</span>
+                  <span>KIDS COURSES</span>
                 </a>
-                <a href='AdultsCourses'>
+                <a href='/AdolescentsCourses'>
+                  <img src="/images/adults@300x.png" alt="img" />
+                  <span>ADOLESCENTS COURSES</span>
+                </a>
+                <a href='/AdultsCourses'>
                   <img src="/images/adults@300x.png" alt="img" />
                   <span>ADULTS COURSES</span>
                 </a>

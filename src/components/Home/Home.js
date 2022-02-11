@@ -33,6 +33,7 @@ import img6 from '../IntExamswiper/exam-JLPT.jpg';
 import img7 from '../IntExamswiper/exam-siele.jpg';
 import img8 from '../IntExamswiper/exam-TEF.jpg';
 import img9 from '../IntExamswiper/exam-TOPIK.jpg';
+import Curriculum from '../curriculum/Curriculum';
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
@@ -245,7 +246,7 @@ class Home extends react.Component {
 
                 <div className="Home-container-7">
                     <div className='Home-container-7-text'>
-                        <h1>The Language Network saves you Money Time</h1>
+                        <h1>The Language Network saves you Money & Time</h1>
                         <p>Our online classes cut out that stressful commute so you can focus your energy on learning. We offer quality courses at affordable prices, with no hidden costs. Up to 30% cheaper than traditional language schools.</p>
                     </div>
                     <div className='Home-container-7-circle'>
@@ -325,6 +326,8 @@ class Home extends react.Component {
 
                     </div>
                 </div>
+
+                <Curriculum />
 
                 <div className="Home-container-11">
                     <h1>Happy Testimonials</h1>

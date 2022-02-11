@@ -6,32 +6,32 @@ export default function Sec3() {
 
     AOS.init()
 
-    function changeCol1() {
-        document.getElementById('Home-card-text-h1').style.color = '#460090';
-        document.getElementById('Home-card-1').style.boxShadow = '0px 0px 38px -10px #460090';
-    }
+    // function changeCol1() {
+    //     document.getElementById('Home-card-text-h1').style.color = '#460090';
+    //     document.getElementById('Home-card-1').style.boxShadow = '0px 0px 38px -10px #460090';
+    // }
 
-    function changeCol2() {
-        document.getElementById('Home-card-text-h2').style.color = '#f2b919';
-        document.getElementById('Home-card-2').style.boxShadow = '0px 0px 38px -10px #f2b919';
+    // function changeCol2() {
+    //     document.getElementById('Home-card-text-h2').style.color = '#f2b919';
+    //     document.getElementById('Home-card-2').style.boxShadow = '0px 0px 38px -10px #f2b919';
 
-    }
+    // }
 
-    function changeCol3() {
-        document.getElementById('Home-card-text-h3').style.color = '#13bfab';
-        document.getElementById('Home-card-3').style.boxShadow = '0px 0px 38px -10px #13bfab';
+    // function changeCol3() {
+    //     document.getElementById('Home-card-text-h3').style.color = '#13bfab';
+    //     document.getElementById('Home-card-3').style.boxShadow = '0px 0px 38px -10px #13bfab';
 
-    }
+    // }
 
-    function changeBack() {
-        document.getElementById('Home-card-text-h1').style.color = '#000';
-        document.getElementById('Home-card-text-h2').style.color = '#000';
-        document.getElementById('Home-card-text-h3').style.color = '#000';
-        document.getElementById('Home-card-1').style.boxShadow = 'none';
-        document.getElementById('Home-card-2').style.boxShadow = 'none';
-        document.getElementById('Home-card-3').style.boxShadow = 'none';
+    // function changeBack() {
+    //     document.getElementById('Home-card-text-h1').style.color = '#000';
+    //     document.getElementById('Home-card-text-h2').style.color = '#000';
+    //     document.getElementById('Home-card-text-h3').style.color = '#000';
+    //     document.getElementById('Home-card-1').style.boxShadow = 'none';
+    //     document.getElementById('Home-card-2').style.boxShadow = 'none';
+    //     document.getElementById('Home-card-3').style.boxShadow = 'none';
 
-    }
+    // }
 
     return <div className='flex flex-col items-center mt-32'>
         <div className="Home-container-3">
@@ -43,7 +43,7 @@ export default function Sec3() {
             </p>
         </div>
 
-        <div className="Home-container-4">
+        {/* <div className="Home-container-4">
             <div className="Home-cards" id='Home-card-1' onMouseOver={changeCol1} onMouseLeave={changeBack}>
                 <div className="Home-card-img">
                     <img src='/images/Adolscents@300x.png' alt='img' />
@@ -71,7 +71,7 @@ export default function Sec3() {
                     <p>Getting a certificate is an essential part of verifying your language skills. TLN prepares you for all types of language exams with the professional assistance of highly-qualified teachers. We also offer online classes per your convenience.</p>
                 </div>
             </div>
-        </div>
+        </div> */}
         <section class="text-gray-600 body-font">
             <div class="container px-5 py-20 mx-auto">
                 <div class="flex items-center lg:w-11/12 mx-auto sm:flex-row flex-col">
