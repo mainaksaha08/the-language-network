@@ -23,7 +23,7 @@ export default function Footer() {
                 <img src='/images/payments/upi-pay-icon.svg' />
             </div>
             <footer className="footer-section">
-                <div className="container">
+                <div className="container w-full">
 
                     <div className="footer-content pt-5 pb-5">
                         <div className="row">
@@ -42,7 +42,7 @@ export default function Footer() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-2 col-lg-2 col-md-6 mb-30">
+                            <div className="col-xl-1 col-lg-2 col-md-6 mb-30 mx-12">
                                 <div className="footer-widget">
                                     <div className="footer-widget-heading">
                                         <h3>Company</h3>
@@ -60,16 +60,33 @@ export default function Footer() {
                             <div className="col-xl-2 col-lg-2 col-md-6 mb-50">
                                 <div className="footer-widget">
                                     <div className="footer-widget-heading">
-                                        <h3>Pricing</h3>
+                                        <h3>Languages for Adults</h3>
                                     </div>
                                     <ul>
-                                        <li><a href="#">English Pricing</a></li>
-                                        <li><a href="#">French Pricing</a></li>
-                                        <li><a href="#">Spanish Pricing</a></li>
-                                        <li><a href="#">German Pricing</a></li>
-                                        <li><a href="#">Mandarin Pricing</a></li>
-                                        <li><a href="#">Japanese Pricing</a></li>
-                                        <li><a href="#">Korean Pricing</a></li>
+                                        <li><a href="/IntoCourses">Introductory Courses</a></li>
+                                        <li><a href="#">English Courses</a></li>
+                                        <li><a href="#">French Courses</a></li>
+                                        <li><a href="#">Spanish Courses</a></li>
+                                        <li><a href="#">German Courses</a></li>
+                                        <li><a href="#">Mandarin Courses</a></li>
+                                        <li><a href="#">Japanese Courses</a></li>
+                                        <li><a href="#">Korean Courses</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="col-xl-2 col-lg-2 col-md-6 mb-50">
+                                <div className="footer-widget">
+                                    <div className="footer-widget-heading">
+                                        <h3>Languages fo Kids</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Kids English Courses</a></li>
+                                        <li><a href="#">Kids French Courses</a></li>
+                                        <li><a href="#">Kids Spanish Courses</a></li>
+                                        <li><a href="#">Kids German Courses</a></li>
+                                        <li><a href="#">Kids Mandarin Courses</a></li>
+                                        <li><a href="#">Kids Japanese Courses</a></li>
+                                        <li><a href="#">Kids Korean Courses</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -79,25 +96,16 @@ export default function Footer() {
                                         <h3>Subscribe</h3>
                                     </div>
                                     <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">About us</a></li>
-                                        <li><a href="#">Careers</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Press</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Affiliate Program</a></li>
                                     </ul>
-                                </div>
-                            </div>
-                            <div className="col-xl-2 col-lg-2 col-md-6 mb-50">
-                                <div className="footer-widget">
                                     <div className="footer-widget-heading">
-                                        <h3>Subscribe</h3>
+                                        <h3>More</h3>
                                     </div>
                                     <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">About us</a></li>
-                                        <li><a href="#">Careers</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Press</a></li>
+                                        <li><a href="#">Phrasebook</a></li>
+                                        <li><a href="#">Events</a></li>
                                     </ul>
                                 </div>
                             </div>
