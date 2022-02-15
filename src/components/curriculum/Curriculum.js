@@ -7,7 +7,7 @@ import Sec3 from './Sec3';
 
 export default function Curriculum() {
     return (<>
-        <div className='curriculum'>
+        <div id='Curriculum' className='curriculum'>
             <Sec1 />
             <Sec2 />
             <Sec3 />

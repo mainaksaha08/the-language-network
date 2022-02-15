@@ -4,6 +4,8 @@ import { IoIosArrowDown } from 'react-icons/io';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import react from 'react';
 import { AiOutlineCloseSquare } from 'react-icons/ai';
+import { Link } from 'react-scroll'
+
 
 
 class Header extends react.Component {
@@ -111,9 +113,14 @@ class Header extends react.Component {
           <img src="/images/Logo-website.png" alt="Logo" />
         </Logo>
         <NavMenu>
-          {/* <a href='/curriculum'>
-            <span>Curriculum</span>
-          </a> */}
+          <a href='/'>
+            <span >
+              <Link to="Curriculum" spy={true} smooth={false}>
+                Curriculum
+              </Link>
+            </span>
+          </a>
+
           <a>
             <span id='curriculum' className='hover:text-teal-600' style={{ padding: '31px 0px' }} onMouseOver={expand} onMouseLeave={retract}>
               courses
@@ -122,12 +129,9 @@ class Header extends react.Component {
               <div id='curriList' >
                 <a href='/KidsCourses'>
                   <img src="/images/Adolscents@300x.png" alt="img" />
-                  <span>KIDS COURSES</span>
+                  <span>KIDS & ADOLESCENTS COURSES</span>
                 </a>
-                <a href='/AdolescentsCourses'>
-                  <img src="/images/Kids@300x-1.png" alt="img" />
-                  <span>ADOLESCENTS COURSES</span>
-                </a>
+
                 <a href='/AdultsCourses'>
                   <img src="/images/adults@300x.png" alt="img" />
                   <span>ADULTS COURSES</span>
@@ -205,7 +209,9 @@ const NavMenu = styled.div`
     text-decoration: none;
     display: flex;
     align-items: center;
-    padding: 0 12px;
+    padding: 12px 12px;
+    cursor: pointer;
+    height: 100%;
     img {
       height: 20px;
       /* min-width: 20px; */
@@ -224,9 +230,9 @@ const NavMenu = styled.div`
       white-space: nowrap;
       position: relative;
       text-decoration: none;
-        /* &:hover {
+        &:hover {
           color: #707070;
-        } */
+        }
         
     div {
         display: flex;

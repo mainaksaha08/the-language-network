@@ -327,7 +327,7 @@ class Home extends react.Component {
                     </div>
                 </div>
 
-                <Curriculum />
+                <Curriculum id='curriculum' />
 
                 <div className="Home-container-11">
                     <h1>Happy Testimonials</h1>

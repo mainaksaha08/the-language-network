@@ -14,7 +14,7 @@ function App() {
         <Header />
         <Routes>
           <Route exact path='/' element={<Home />} />
-          <Route exact path='/curriculum' element={<Curriculum />} />
+          {/* <Route exact path='/curriculum' element={<Curriculum />} /> */}
           <Route exact path='/KidsCourses' element={<KidsCourses />} />
           <Route exact path='/IntoCourses' element={<IntroCourse />} />
         </Routes>
