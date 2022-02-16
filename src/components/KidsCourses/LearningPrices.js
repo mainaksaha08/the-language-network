@@ -35,7 +35,7 @@ export default function LearningPrices(props) {
             </a>
             <a onClick={() => setOpt(3)} id={Opt === 3 ? 'btnP' : ''} class="flex flex-row text-center buttons bg-white  py-2.5 px-4 rounded-lg shadow mx-3">
                 <h1 className='text-xl font-medium'>Group Learning</h1>
-                <h2 className='text-gray-800 text-sm'>(1 Teacher & 6 Student)</h2>
+                <h2 className='text-gray-800 text-sm'>(1 Teacher & 7 Student)</h2>
             </a>
         </div>
         <LearningPrices />
