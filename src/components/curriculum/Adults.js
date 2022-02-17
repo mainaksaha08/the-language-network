@@ -67,22 +67,22 @@ function Adults() {
 
             <div className='w-full flex justify-center'>
                 <a onClick={() => setLang('french')} id={lang === 'french' ? 'btnP' : ''} class="buttons bg-white py-2.5 px-4 rounded-lg shadow mx-3">
-                    Adults Curriculum
+                    FRENCH
                 </a>
                 <a onClick={() => setLang('spanish')} id={lang === 'spanish' ? 'btnP' : ''} class="buttons bg-white  py-2.5 px-4 rounded-lg shadow mx-3">
-                    Adolescents Curriculum
+                    SPANISH
                 </a>
                 <a onClick={() => setLang('german')} id={lang === 'german' ? 'btnP' : ''} class="buttons bg-white py-2.5 px-4 rounded-lg shadow mx-3">
-                    Kids Curriculum
+                    GERMAN
                 </a>
                 <a onClick={() => setLang('mandarin')} id={lang === 'mandarin' ? 'btnP' : ''} class="buttons bg-white py-2.5 px-4 rounded-lg shadow mx-3">
-                    Kids Curriculum
+                    MANDARIN
                 </a>
                 <a onClick={() => setLang('japanese')} id={lang === 'japanese' ? 'btnP' : ''} class="buttons bg-white py-2.5 px-4 rounded-lg shadow mx-3">
-                    Kids Curriculum
+                    JAPANESE
                 </a>
                 <a onClick={() => setLang('korean')} id={lang === 'korean' ? 'btnP' : ''} class="buttons bg-white py-2.5 px-4 rounded-lg shadow mx-3">
-                    Kids Curriculum
+                    KOREAN
                 </a>
             </div>
             <div className='flex justify-center'>
