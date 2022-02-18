@@ -6,6 +6,7 @@ import German from './LangLvl/German';
 import Mandarin from './LangLvl/Mandarin';
 import Japanese from './LangLvl/Japanese';
 import Korean from './LangLvl/Korean';
+import English from './LangLvl/English';
 import AdultsTable from './AdultsTable'
 
 
@@ -32,7 +33,11 @@ function Adults() {
             case 'korean':
                 return (<Korean />)
                 break;
-            default:
+           
+                case 'English':
+                    return (<English />)
+                    break;
+                    default: 
         }
     };
 
@@ -83,6 +88,9 @@ function Adults() {
                 </a>
                 <a onClick={() => setLang('korean')} id={lang === 'korean' ? 'btnP' : ''} class="buttons bg-white py-2.5 px-4 rounded-lg shadow mx-3">
                     KOREAN
+                </a>
+                <a onClick={() => setLang('English')} id={lang === 'English' ? 'btnP' : ''} class="buttons bg-white py-2.5 px-4 rounded-lg shadow mx-3">
+                    English
                 </a>
             </div>
             <div className='flex justify-center'>
