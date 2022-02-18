@@ -90,7 +90,7 @@ function Adults() {
                     KOREAN
                 </a>
                 <a onClick={() => setLang('English')} id={lang === 'English' ? 'btnP' : ''} class="buttons bg-white py-2.5 px-4 rounded-lg shadow mx-3">
-                    English
+                    ENGLISH
                 </a>
             </div>
             <div className='flex justify-center'>
