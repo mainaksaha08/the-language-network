@@ -80,6 +80,8 @@ class Home extends react.Component {
         }
 
         return (
+
+            
             <div className='Home'>
                 <div className='Home-container-1'>
                     <div className='Home-container-1-sec-1'>
@@ -94,35 +96,7 @@ class Home extends react.Component {
                         </video>
                     </div>
                 </div>
-                <div className="smallscr">
-                        <div className='overlay-box2'>
-                            <h1><CountUp start={0} end={5000} separator=","
-                                suffix="+" duration={1}>
-                                {({ countUpRef, start }) => (
-                                    <VisibilitySensor onChange={start}>
-                                        <span ref={countUpRef} />
-                                    </VisibilitySensor>
-                                )}
-                            </CountUp></h1>
-                            <h2>Students</h2>
-                        </div>
-                        <div className='overlay-box2'>
-                            <div className='stars2'><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /></div>
-                            <h2>5 Star Rating</h2>
-                        </div>
-                        <div className='overlay-box2'>
-                            <h1><CountUp start={0} end={200} separator=","
-                                suffix="+" duration={1}>
-                                {({ countUpRef, start }) => (
-                                    <VisibilitySensor onChange={start}>
-                                        <span ref={countUpRef} />
-                                    </VisibilitySensor>
-                                )}
-                            </CountUp></h1>
-                            <h2>Expert Trainers</h2>
-                        </div>
-
-                    </div>
+               
 
                 <div className="Home-container-2" >
                     <h1>START YOUR JOURNEY WITH US!</h1>
