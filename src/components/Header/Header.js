@@ -106,7 +106,7 @@ class Header extends react.Component {
                 <a>Korean</a>
               </ul>
             </div>
-            <li>Book a free trail</li>
+            <li>Book a trail</li>
           </Lists>
         </Sidemenu>
         <Logo href='/#'>
@@ -143,10 +143,10 @@ class Header extends react.Component {
         </NavMenu>
         <Trial>
           <span>
-            Book a free trial
+            Book a trial
           </span>
-
         </Trial>
+        
         <Menu onMouseDown={menuBackExpand}>
           <GiHamburgerMenu style={{ color: 'rgb(0 0 0)', width: "75%", height: '100%' }} />
         </Menu>
